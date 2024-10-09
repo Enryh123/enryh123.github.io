@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"bf0cb44e54eb4e76","type":"text","text":"歌手投票\n1. 多个数据统计次数，多个变量记录（数组），cnt[1],cnt[2],cnt[3] 分别记录 1,2,3的次数，以此类推","x":-1080,"y":-228,"width":580,"height":263},
+		{"id":"1dbaab3618f12674","type":"file","file":"明明的随机数.md","x":-380,"y":-359,"width":444,"height":90},
+		{"id":"86f831056155a491","type":"text","text":"最大数输出","x":-1420,"y":-359,"width":250,"height":60},
+		{"id":"00459dc82f85dc3f","type":"text","text":"最大跨度值","x":-1420,"y":-239,"width":250,"height":60},
+		{"id":"ffcdfb3c8d6d1d70","type":"text","text":"数列排序","x":-775,"y":-389,"width":250,"height":60},
+		{"id":"19673ece48f5414a","type":"text","text":"付煜伟","x":-240,"y":-580,"width":240,"height":60,"color":"1"},
+		{"id":"43a45f1a1c087d50","type":"text","text":"珠心算测验 #枚举算法","x":-339,"y":-179,"width":362,"height":64},
+		{"id":"63f60a8d65b5d7bd","type":"text","text":"int a[长度];\nfor(int i=0; i<n; i++){\n\tcin>>a[i];\n}\na[4] = 3;\n","x":-1475,"y":110,"width":360,"height":300,"color":"4"},
+		{"id":"55766a51ab18423d","type":"text","text":"找到指定字符出现的次数\n核心：单个数据统计次数，单个cnt 变量","x":-1000,"y":125,"width":280,"height":100},
+		{"id":"c9cfe2fabf1aa2e6","type":"text","text":"string s;\ngetline(cin, s) 带空格输入\nfor(int i=0; i<s.size(); i++){\n   s[i]\n}","x":-600,"y":225,"width":316,"height":160,"color":"4"},
+		{"id":"7afcf0e4e894753e","type":"text","text":"添加运算符 #枚举算法","x":-430,"y":-10,"width":380,"height":90}
+	],
+	"edges":[
+		{"id":"501e388fbc76e29f","fromNode":"ffcdfb3c8d6d1d70","fromSide":"right","toNode":"1dbaab3618f12674","toSide":"left"},
+		{"id":"11ea416790714e90","fromNode":"bf0cb44e54eb4e76","fromSide":"right","toNode":"1dbaab3618f12674","toSide":"left"},
+		{"id":"ab414568e2652320","fromNode":"55766a51ab18423d","fromSide":"top","toNode":"bf0cb44e54eb4e76","toSide":"bottom"},
+		{"id":"4769a6a6ddfe1964","fromNode":"00459dc82f85dc3f","fromSide":"bottom","toNode":"bf0cb44e54eb4e76","toSide":"left"},
+		{"id":"56270cb6c316cbbe","fromNode":"86f831056155a491","fromSide":"bottom","toNode":"00459dc82f85dc3f","toSide":"top"},
+		{"id":"d65d3ba89fa70879","fromNode":"1dbaab3618f12674","fromSide":"bottom","toNode":"43a45f1a1c087d50","toSide":"top"},
+		{"id":"580f24c61a9d0152","fromNode":"19673ece48f5414a","fromSide":"bottom","toNode":"1dbaab3618f12674","toSide":"top","color":"1"},
+		{"id":"1218d62dda0bae77","fromNode":"63f60a8d65b5d7bd","fromSide":"left","toNode":"86f831056155a491","toSide":"left","color":"4"},
+		{"id":"7b4c39962c371414","fromNode":"c9cfe2fabf1aa2e6","fromSide":"left","toNode":"55766a51ab18423d","toSide":"right","color":"4"},
+		{"id":"04920ef7136ebbc1","fromNode":"43a45f1a1c087d50","fromSide":"bottom","toNode":"7afcf0e4e894753e","toSide":"top"}
+	]
+}

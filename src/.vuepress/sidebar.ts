@@ -1,21 +1,25 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/": [
-    "",
-    "portfolio",
+  "/math/":[
     {
-      text: "案例",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
+      text: "概念",
       children: "structure",
     },
     {
-      text: "文档",
-      icon: "book",
-      prefix: "guide/",
+      text: "序列",
+      prefix: "serial/",
+      link: "serial/",
       children: "structure",
+    },
+  ],
+  "/": [
+    "",
+    {
+      text: "算法",
+      icon: "shapes",
+      prefix: "algorithm/",
+      children: "structure"
     },
     {
       text: "幻灯片",

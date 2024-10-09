@@ -7,13 +7,12 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Enryh",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://zzz.mihoyo.com/_nuxt/img/logo.1e072ee.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -47,31 +46,35 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],
     },
-
+    copyright: false,
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     markdownImage: {
       figure: true,
       lazyload: true,
       size: true,
     },
+    markdownHint: {
+      // 启用 GFM 警告
+      alert: true,
+    },
 
-    // markdownMath: {
-    //   // 启用前安装 katex
-    //   type: "katex",
-    //   // 或者安装 mathjax-full
-    //   type: "mathjax",
-    // },
+    markdownMath: {
+      // 启用前安装 katex
+      // type: "katex",
+      // 或者安装 mathjax-full
+      type: "mathjax",
+    },
 
     // 此功能被开启用于演示，你应仅当使用时保留。
     markdownTab: true,
