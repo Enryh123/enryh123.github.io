@@ -1,6 +1,11 @@
 ---
 title: 数论基础
 order: 1
+icon: superscript
+breadcrumbIcon: false
+tag:
+  - 唯一分解定理
+  - 辗转相除法
 ---
 ## 整除
 
@@ -18,7 +23,6 @@ $b$ 不被 $a$ 整除记作 $a\nmid b$。
 -   $a\mid b\land a\mid c\iff\forall x,y\in\mathbf{Z}, a\mid(xb+yc)$
 -   $a\mid b\land b\mid a\implies b=\pm a$
 -   设 $m\ne0$，那么 $a\mid b\iff ma\mid mb$。
--   设 $b\ne0$，那么 $a\mid b\implies|a|\le|b|$。
 -   设 $a\ne0,b=qa+c$，那么 $a\mid b\iff a\mid c$。
 
 ### 约数

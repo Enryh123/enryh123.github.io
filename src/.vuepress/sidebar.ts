@@ -1,15 +1,15 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  "/math/":[
+  "/solutions/":[
     {
-      text: "概念",
+      text: "参考题解",
       children: "structure",
     },
+  ],
+  "/math/":[
     {
-      text: "序列",
-      prefix: "serial/",
-      link: "serial/",
+      text: "数学",
       children: "structure",
     },
   ],

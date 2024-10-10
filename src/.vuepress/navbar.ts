@@ -6,7 +6,7 @@ export default navbar([
   "/solutions/",
   {
     text:"数学",
-    icon:"percent",
+    icon:"wave-square",
     link: "/math/"
   },
   {

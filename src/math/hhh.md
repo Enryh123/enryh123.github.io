@@ -1,7 +1,6 @@
 ---
-dir:
-  collapsible: true
-  order: 2
-  text: Group 1
+title: 进制与位运算
+order: 2
+
 ---
-# 测试
+# 进制与位运算
