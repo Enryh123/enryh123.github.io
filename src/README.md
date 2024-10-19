@@ -2,6 +2,7 @@
 home: true
 portfolio: true
 title: ENRYH
+index: false
 icon: user
 welcome: 请抓紧时间练习代码
 name: TO BE CONTINUE...

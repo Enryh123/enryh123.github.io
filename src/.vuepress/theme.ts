@@ -15,9 +15,9 @@ export default hopeTheme({
   logo: "https://zzz.mihoyo.com/_nuxt/img/logo.1e072ee.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  
   docsDir: "src",
-
+  copyright: false,
   // 导航栏
   navbar,
 
@@ -25,7 +25,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
 
   // 加密配置

@@ -8,7 +8,6 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "ENRYH",
   description: "vuepress-theme-hope 的文档演示",
-
   theme,
 
   // 和 PWA 一起启用

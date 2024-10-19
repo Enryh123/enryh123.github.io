@@ -1,6 +1,7 @@
 ---
 title: 参考题解
 icon: book
+index: false
 ---
 
 这是项目主页的案例。你可以在这里放置你的主体内容。
