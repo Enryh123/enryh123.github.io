@@ -7,7 +7,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "ENRYH",
-  description: "vuepress-theme-hope 的文档演示",
+  description: "",
   theme,
 
   // 和 PWA 一起启用

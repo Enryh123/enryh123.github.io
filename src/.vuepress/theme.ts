@@ -5,11 +5,11 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
+  repoDisplay: false,
   author: {
     name: "Enryh",
   },
-
+  darkmode: "disable",
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://zzz.mihoyo.com/_nuxt/img/logo.1e072ee.png",
@@ -36,9 +36,9 @@ export default hopeTheme({
   },
 
   // 多语言配置
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
-  },
+  // metaLocales: {
+  //   editLink: "在 GitHub 上编辑此页",
+  // },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
