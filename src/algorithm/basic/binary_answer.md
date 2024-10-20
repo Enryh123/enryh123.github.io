@@ -19,7 +19,7 @@ order: 3
 ### 左区间的右极限
 ```cpp title="左区间模版"
 // [ 左边界 1,2,3, ....答案 ] ............ 右边界
-int l=0, r=maxn, mid;
+int l=minn, r=maxn, mid;
 while(l<r){
     mid = (l+r+1)/2;
     if(左侧区间的值均满足的条件) l=mid;
@@ -31,7 +31,7 @@ cout<<l; // 答案
 ### 右区间的左极限
 ```cpp title="右区间模版"
 // 左边界 1,2,3, .... [ 答案  ............ 右边界 ]
-int l=0, r=maxn, mid;
+int l=minn, r=maxn, mid;
 while(l<r){
     mid = (l+r)/2;
     if(右侧区间的值均满足的条件) r=mid;
@@ -42,7 +42,7 @@ cout<<l; // 答案
 
 ### 浮点数二分模版
 ```cpp title="浮点数二分模版"
-double l=0, r=maxn, mid;
+double l=minn, r=maxn, mid;
 double e=1e-6; // 精度，例如保留5位小数
 while(r-l>e){
     mid = (l+r)/2;
