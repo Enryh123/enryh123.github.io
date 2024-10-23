@@ -12,9 +12,9 @@ export default hopeTheme({
   darkmode: "disable",
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://zzz.mihoyo.com/_nuxt/img/logo.1e072ee.png",
+  logo: "https://vuepress.vuejs.org/images/hero.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // repo: "vuepress-theme-hope/vuepress-theme-hope",
   
   docsDir: "src",
   copyright: false,

@@ -1,7 +1,5 @@
 ---
 title: CSP复赛注意事项
-icon: flag
-footer: false
 ---
 
 ## 1. 做题前准备

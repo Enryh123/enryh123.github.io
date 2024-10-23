@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/algorithm/",
+  "/reference/",
   // "/solutions/",
   {
     text:"数学",

@@ -7,13 +7,13 @@ export default sidebar({
       children: "structure",
     },
   ],
-  "/solutions/":[
-    {
-      text: "题解",
-      children: "structure"
-    }
-  ],
-  "/": [
+  // "/solutions/":[
+  //   {
+  //     text: "题解",
+  //     children: "structure"
+  //   }
+  // ],
+  "/reference/": [
     {
       text: "语法",
       icon: "shapes",
@@ -22,16 +22,18 @@ export default sidebar({
       expanded: true,
     },
     {
-      text: "算法",
+      text: "基础算法",
       icon: "shapes",
-      prefix: "algorithm/",
+      prefix: "basic/",
       children: "structure",
       expanded: true,
     },
-    // {
-    //   text: "幻灯片",
-    //   icon: "person-chalkboard",
-    //   link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
-    // },
+    {
+      text: "其他",
+      icon: "font-awesome",
+      prefix: "others/",
+      children: "structure",
+      expanded: true,
+    },
   ],
 });
