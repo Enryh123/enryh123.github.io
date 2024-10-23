@@ -1,6 +1,6 @@
 ---
 title: 变量
-footer: false
+order: 1
 ---
 ## 变量类型
 1. `int` 整型

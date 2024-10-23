@@ -1,6 +1,6 @@
 ---
 title: for 循环
-footer: false
+order: 3
 ---
 
 ## 1. 基本 for 循环语法

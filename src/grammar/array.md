@@ -1,6 +1,6 @@
 ---
 title: 数组使用
-footer: false
+order: 2
 ---
 
 ## 1. 数组的创建
