@@ -106,8 +106,8 @@ div[class*=language-],
     color: rgb(23 151 173);
 }
 :not(pre)>code{
-    background: var(--vp-c-accent-soft);
-    color: var(--vp-c-accent);
+    background: rgba(210, 255, 199, 0.0509803922);
+    color: var(--tip-c-text);
     font-weight: bolder;
 }
 
