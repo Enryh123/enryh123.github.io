@@ -15,7 +15,7 @@ export default hopeTheme({
   logo: "https://vuepress.vuejs.org/images/hero.png",
 
   // repo: "vuepress-theme-hope/vuepress-theme-hope",
-  
+
   docsDir: "src",
   copyright: false,
   // 导航栏
@@ -53,7 +53,9 @@ export default hopeTheme({
     //   category: "Announcements",
     //   categoryId: "DIC_kwDOG_Pt2M4COD69",
     // },
-
+    revealjs: {
+      plugins: ["math", "highlight", "notes", "zoom"],
+    },
     components: {
       components: ["Badge", "VPCard"],
     },
