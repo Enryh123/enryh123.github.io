@@ -449,3 +449,128 @@ int main() {
 ```
 :::
 
+
+### [4458 分配礼物](https://oj.aicoders.cn/problem/4458)
+
+#### 问题分析
+题目要求将礼物分成尽量少的组，每组包含的礼物数量最多为两个，且总价值不超过给定的上限 \( y \)。我们的目标是计算有多少组正好包含两个礼物的数量，即有多少同学能领到两件礼物。
+
+#### 关键问题解析
+在代码实现中，使用了双指针法：一个指针 `left` 指向数组的最小元素，一个指针 `right` 指向数组的最大元素。通过不断尝试将最小和最大元素配对，可以高效地满足条件并减少组数。
+
+#### 为什么条件是 `left < right`，而不是 `left <= right`
+
+在这个双指针方案中，循环的终止条件为 `left < right` 而不是 `left <= right`。原因如下：
+
+1. **避免重复检查**：  
+   当 `left == right` 时，指向的是同一个元素，意味着只剩下一个礼物。此时这个礼物只能独自成组，不可能和其他礼物配对。如果继续执行循环，会导致程序错误地尝试配对同一个礼物。
+
+2. **确保所有礼物都被检查**：  
+   使用 `left < right` 能保证程序在剩下两个礼物时进行最后一次有效配对，避免越界和冗余的单个礼物判断。
+
+3. **保持逻辑清晰**：  
+   当 `left < right` 时，正好满足配对条件，不需要再处理单个礼物的情况，使代码更简洁且避免不必要的分支处理。
+
+#### 代码实现
+::: details 代码实现
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n, y;
+    cin >> n >> y;
+    int w[100]; // 普通数组来存储礼物的价值，最大为 100
+    
+    for (int i = 0; i < n; i++) {
+        cin >> w[i];
+    }
+
+    // 排序礼物价值，便于两端配对
+    sort(w, w + n);
+    int left = 0, right = n - 1;
+    int twoGiftCount = 0; // 统计每组包含两个礼物的数量
+
+    while (left < right) {
+        // 如果最小值和最大值之和不超过 y，则可以配对
+        if (w[left] + w[right] <= y) {
+            twoGiftCount++; // 形成一组包含两个礼物
+            left++;
+            right--;
+        } else {
+            // 否则只选择价值最大的礼物独自成组
+            right--;
+        }
+    }
+
+    cout << twoGiftCount << endl;
+    return 0;
+}
+```
+:::
+
+### [1743 童童看节目](https://oj.aicoders.cn/problem/1743)
+
+#### 问题分析
+童童想尽可能多地完整观看互不重叠的节目。此问题可通过贪心算法来解决：我们首先将节目按结束时间排序，然后尽量选择结束时间最早且不与已选择的其他节目重叠的节目，从而获得最多的可观看节目数量。
+
+#### 解题步骤
+1. 使用结构体 `Program` 来存储每个节目的开始和结束时间。
+2. 将节目按结束时间排序。
+3. 遍历节目表，选择符合条件的节目（即开始时间不早于上一个观看节目的结束时间），并计数。
+4. 输出结果。
+
+::: tip
+通过结构体实现更清晰地表示节目的开始和结束时间，提高代码的可读性。
+:::
+
+#### 代码实现
+::: details 代码实现
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+// 定义结构体 Program 存储节目的开始和结束时间
+struct Program {
+    int start;
+    int end;
+};
+
+// 排序依据：按结束时间从小到大排序
+bool compare(Program a, Program b) {
+    return a.end < b.end;
+}
+
+int main() {
+    while (true) {
+        int n;
+        cin >> n;
+        if (n == 0) break;
+
+        // 定义数组存储 n 个节目
+        Program programs[100];
+        for (int i = 0; i < n; i++) {
+            cin >> programs[i].start >> programs[i].end;
+        }
+
+        // 按结束时间排序
+        sort(programs, programs + n, compare);
+
+        int count = 0;
+        int last_end_time = 0;
+
+        // 贪心选择不重叠的节目
+        for (int i = 0; i < n; i++) {
+            if (programs[i].start >= last_end_time) {
+                count++;
+                last_end_time = programs[i].end;
+            }
+        }
+
+        cout << count << endl;
+    }
+
+    return 0;
+}
+```
+:::
