@@ -1,6 +1,6 @@
 ---
 title: Lesson 6 - 阶段复习测试
-order: 5
+order: 6
 ---
 
 ### [3204 寻找最大和](https://oj.aicoders.cn/problem/3204)
